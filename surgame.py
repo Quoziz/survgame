@@ -123,30 +123,7 @@ if __name__ == '__main__':
         clock.tick(30)
 
         if gameplay:
-            '''for (e, bullet) in enumerate(bullets):
-                bullet_rect = bullet.get_rect(topleft=(x + 30, y + 10))
-                if bullet.x < 500 and bullet.x > 0:
-                    bullet.x += bullet.vel
-                else:
-                    bullets.pop(bullets.index(bullet))
-
-                if ghost_list:
-                    for (index, ghost_el) in enumerate(ghost_list):
-                        if bullet.x == ghost_el.x:
-                            ghost_list.pop(index)
-                            bullets.pop(e)
-
-            keys = pygame.key.get_pressed()
-
-            if keys[pygame.K_f]:  #выпускание снарядов
-
-                if lastMove == "right":
-                    facing = 1
-                else:
-                    facing = -1
-
-                if len(bullets) < 5: #максимальное количество снарядов на экране
-                    bullets.append(snaryad(round(x + widht // 1), round(y + height // 2.45), 5, (255, 0, 0), facing))'''
+            
             keys = pygame.key.get_pressed()
 
             if keys[pygame.K_LEFT] and x > 5:  # передвижение с ограничением в окно
